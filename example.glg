@@ -1,0 +1,40 @@
+// 1
+
+(package :main)
+
+(import ["fmt"])
+
+(func :main
+    (fmt.Println "Hello, 世界"))
+
+// 4
+
+(package :main)
+
+(import ["fmt" "time"])
+
+(func :main
+    (fmt.Println "Welcome to the playground!")
+    (fmt.Println "The time is" (time.Now)))
+
+// basics
+
+// 1
+
+(package :main)
+
+(import ["fmt" "math/rand"])
+
+(func :main
+	(fmt.Println "My favorite number is" (rand.Intn 10)))
+
+
+// struct
+
+(type T {
+    :name string
+    :value int})
+
+(type T (struct
+    :name string
+    :value int))
